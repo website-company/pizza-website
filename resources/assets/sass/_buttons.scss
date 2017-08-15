@@ -1,0 +1,17 @@
+.btn{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin-top: 15px;
+
+  &.btn-primary{
+    padding: 10px 18px;
+    &:hover{
+      color:#ffffff !important;
+    }
+  }
+
+}

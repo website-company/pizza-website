@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Theme Font";
+  src: url("/fonts/vendor/webfonts/acherus_grotesque_-_regular-webfont.woff") format("woff"),
+  url("/fonts/vendor/webfonts/acherus_grotesque_-_regular-webfont.woff2") format("woff2"),
+}
+@font-face {
+  font-family: "Theme Font Bold";
+  src: url("/fonts/vendor/webfonts/acherus_grotesque_-_regular_italic-webfont.woff") format("woff"),
+  url("/fonts/vendor/webfonts/acherus_grotesque_-_regular_italic-webfont.woff2") format("woff2"),
+}
+h1{
+  font-family: "Theme Font";
+  color: $text-light;
+}
+p{
+  color: $text-light;
+  font-size: 18px;
+}
+a{
+  @include transition(all .3s ease);
+  &:hover{
+    color: $brand-primary !important;
+    text-decoration: none;
+  }
+}

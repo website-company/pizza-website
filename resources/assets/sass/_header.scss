@@ -1,0 +1,39 @@
+header{
+  .top-box{
+    background-color: $header-color;
+    .logo{
+      font-size: 28px;
+      font-weight: bold;
+      margin: 10px 10px 10px 0;
+      .accent{
+        color: $brand-primary;
+      }
+    }
+    nav{
+      margin-top: 10px;
+      a{
+       @extend .md-link-font;
+       color: $text-color;
+      }
+    }
+  }
+
+  .main-nav{
+    background: #000000;
+    background: -moz-linear-gradient(left,  #000000 0%, #212121 100%);
+    background: -webkit-linear-gradient(left,  #000000 0%,#212121 100%);
+    background: linear-gradient(to right,  #000000 0%,#212121 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#212121',GradientType=1 );
+
+    nav{
+      a{
+        @extend .md-link-font;
+        color:$text-light;
+
+        &:nth-of-type(1){
+          padding-left: 0px;
+        }
+      }
+    }
+  }
+}
